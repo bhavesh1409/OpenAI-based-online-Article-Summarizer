@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grading Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f1f1f1;
+      margin: 0;
+      padding: 0;
+    }
+    .header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: calc(100vh - 40px);
+    }
+    .grading-table {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      max-width: 800px;
+      width: 90%;
+    }
+    .grading-table h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 10px;
+      text-align: left;
+      border-bottom: 1px solid #ccc;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    .feedback-textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      resize: vertical;
+    }
+    .save-btn {
+      background-color: #4CAF50;
+      color: #fff;
+      cursor: pointer;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 3px;
+      font-size: 16px;
+    }
+    .save-btn:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Grading Page</h1>
+  </div>
+  <div class="container">
+    <div class="grading-table">
+      <h2>Test Title - Student Submissions</h2>
+      <table>
+        <tr>
+          <th>Student Name</th>
+          <th>Question</th>
+          <th>Student Answer</th>
+          <th>Grade</th>
+          <th>Feedback</th>
+        </tr>
+        <tr>
+          <td>Student A</td>
+          <td>Question 1</td>
+          <td>Lorem ipsum dolor sit amet...</td>
+          <td><input type="text" name="grade" placeholder="Enter grade"></td>
+          <td><textarea class="feedback-textarea" placeholder="Enter feedback"></textarea></td>
+        </tr>
+        <!-- Add more rows for each student's submission -->
+      </table>
+      <button class="save-btn">Save Grades and Feedback</button>
+    </div>
+  </div>
+</body>
+</html>

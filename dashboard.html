@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teacher Dashboard</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f1f1f1;
+      margin: 0;
+      padding: 0;
+    }
+    .header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: calc(100vh - 40px);
+    }
+    .dashboard {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      max-width: 800px;
+      width: 90%;
+    }
+    .dashboard h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .dashboard-section {
+      margin-bottom: 20px;
+    }
+    .dashboard-section h3 {
+      border-bottom: 2px solid #333;
+      padding-bottom: 5px;
+    }
+    .dashboard-section ul {
+      list-style: none;
+      padding: 0;
+    }
+    .dashboard-section ul li {
+      padding: 10px;
+      border-bottom: 1px solid #ccc;
+    }
+    .dashboard-section ul li:last-child {
+      border-bottom: none;
+    }
+    .dashboard-section ul li a {
+      color: #333;
+      text-decoration: none;
+    }
+    .dashboard-section ul li a:hover {
+      background-color: #f1f1f1;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Teacher Dashboard</h1>
+  </div>
+  <div class="container">
+    <div class="dashboard">
+      <h2>Welcome, Teacher!</h2>
+
+      <div class="dashboard-section">
+        <h3>Test Management</h3>
+        <ul>
+          <li><a href="create_test.html">Create New Test</a></li>
+          <li><a href="#">View Tests</a></li>
+        </ul>
+      </div>
+
+      <div class="dashboard-section">
+        <h3>Student Submissions</h3>
+        <ul>
+          <li><a href="user_profile.html">View Submissions</a></li>
+          <li><a href="grade_test.html">Grade Submissions</a></li>
+        </ul>
+      </div>
+
+      <div class="dashboard-section">
+        <h3>Manage Students</h3>
+        <ul>
+          <li><a href="#">View Students</a></li>
+          <li><a href="#">Add Student</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>

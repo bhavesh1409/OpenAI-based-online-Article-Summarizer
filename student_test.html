@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Test Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f1f1f1;
+      margin: 0;
+      padding: 0;
+    }
+    .header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: calc(100vh - 40px);
+    }
+    .test-container {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      max-width: 800px;
+      width: 90%;
+    }
+    .test-container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .question {
+      margin-bottom: 20px;
+    }
+    .question h3 {
+      border-bottom: 2px solid #333;
+      padding-bottom: 5px;
+    }
+    .question p {
+      margin-bottom: 10px;
+    }
+    .question textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      resize: vertical;
+    }
+    .submit-btn {
+      background-color: #4CAF50;
+      color: #fff;
+      cursor: pointer;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 3px;
+      font-size: 16px;
+    }
+    .submit-btn:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Student Test Page</h1>
+  </div>
+  <div class="container">
+    <div class="test-container">
+      <h2>Test Title</h2>
+
+      <div class="question">
+        <h3>Question 1:</h3>
+        <p>Question text goes here...</p>
+        <textarea rows="4" required></textarea>
+      </div>
+
+      <!-- Add more question sections dynamically using JavaScript -->
+
+      <button class="submit-btn">Submit Test</button>
+    </div>
+  </div>
+</body>
+</html>
